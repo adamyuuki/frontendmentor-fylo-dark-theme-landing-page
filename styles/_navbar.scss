@@ -1,0 +1,41 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 1.5rem;
+	background-color: $Dark-Blue-intro;
+
+	img {
+		height: 1.5rem;
+		width: auto;
+	}
+
+	.nav-links {
+		a {
+			text-decoration: none;
+			color: $white;
+			font-size: 1rem;
+			font-family: $head-font;
+
+			&:not(:last-child) {
+				margin-right: 1.5rem;
+			}
+		}
+	}
+
+	@include breakpoint-up {
+		padding-top: 4.375rem;
+
+		img {
+			height: 3.75rem;
+			width: auto;
+		}
+
+		.nav-links {
+			a {
+				&:not(:last-child) {
+					margin-right: 3.5rem;
+				}
+			}
+		}
+	}
+}

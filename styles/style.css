@@ -1,0 +1,17 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  width: 100vw;
+  background-color: #181f2a;
+}
+
+/*# sourceMappingURL=style.css.map */

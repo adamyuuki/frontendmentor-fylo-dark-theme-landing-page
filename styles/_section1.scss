@@ -1,0 +1,88 @@
+.first-section {
+	padding-top: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: $body-font;
+	background-image: url("../images/bg-curvy-mobile.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-y: bottom;
+	position: relative;
+	background-color: $Dark-Blue-intro;
+
+	img {
+		width: 100%;
+	}
+
+	// &:after {
+	// 	content: "";
+	// 	height: 40%;
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	background-color: $Dark-Blue-bg;
+	// 	bottom: 0;
+	// 	left: 0px;
+	// 	z-index: 0;
+
+	// 	@include breakpoint-up {
+	// 		height: 24%;
+	// 	}
+	// }
+
+	h1 {
+		margin-top: 2rem;
+		color: $white;
+		font-size: 1.5rem;
+		z-index: 1;
+	}
+
+	p {
+		margin-top: 1.5rem;
+		color: $white;
+		font-size: 1rem;
+		margin-bottom: 3rem;
+		z-index: 1;
+	}
+
+	button {
+		margin-top: 1.5rem;
+		width: 15rem;
+		height: 3rem;
+		font-family: $body-font;
+		font-weight: bold;
+		background: $Blue;
+		border-radius: 1.5rem;
+		border: none;
+		color: $white;
+		font-size: 1rem;
+		transition: background-color 300ms ease-in-out;
+
+		&:hover {
+			cursor: pointer;
+			background: $Cyan;
+		}
+	}
+
+	@include breakpoint-up {
+		& > * {
+			max-width: 46rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+			margin-top: 3rem;
+		}
+
+		p {
+			margin-top: 3rem;
+			font-size: 1.5rem;
+		}
+
+		button {
+			width: 17.5rem;
+		}
+	}
+}
